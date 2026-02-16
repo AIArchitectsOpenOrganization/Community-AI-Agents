@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0",
+  "generated_from": "catalog/build_catalog.py",
+  "count": 3,
+  "agents": [
+    {
+      "name": "Architecture Review Agent",
+      "slug": "architecture-review-agent",
+      "description": "Reviews architecture descriptions and provides risks and recommendations.",
+      "category": "architecture",
+      "maturity": "draft",
+      "risk_level": "low",
+      "owner": "community",
+      "version": "0.1.0",
+      "license": "MIT",
+      "frameworks": [
+        "none"
+      ],
+      "runtime": {
+        "cli": "agentctl run architecture-review-agent"
+      },
+      "tags": [
+        "architecture",
+        "review"
+      ],
+      "tools": []
+    },
+    {
+      "name": "Executive Summary Agent",
+      "slug": "executive-summary-agent",
+      "description": "Creates a one-page executive summary from input text.",
+      "category": "leadership",
+      "maturity": "draft",
+      "risk_level": "low",
+      "owner": "community",
+      "version": "0.1.0",
+      "license": "MIT",
+      "frameworks": [
+        "none"
+      ],
+      "runtime": {
+        "cli": "agentctl run executive-summary-agent"
+      },
+      "tags": [
+        "executive",
+        "summary"
+      ],
+      "tools": []
+    },
+    {
+      "name": "Meeting Notes Agent",
+      "slug": "meeting-notes-agent",
+      "description": "Converts raw meeting notes into structured MoM.",
+      "category": "delivery",
+      "maturity": "draft",
+      "risk_level": "low",
+      "owner": "community",
+      "version": "0.1.0",
+      "license": "MIT",
+      "frameworks": [
+        "none"
+      ],
+      "runtime": {
+        "cli": "agentctl run meeting-notes-agent"
+      },
+      "tags": [
+        "meeting",
+        "delivery"
+      ],
+      "tools": []
+    }
+  ]
+}
