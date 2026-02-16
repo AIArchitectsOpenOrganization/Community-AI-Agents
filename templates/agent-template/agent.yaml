@@ -1,0 +1,40 @@
+name: "Agent Name"
+slug: "agent-slug"
+description: "What this agent does in 1–3 sentences."
+category: "architecture"
+maturity: "draft"
+risk_level: "low"
+
+owner: "@yourhandle"
+version: "0.1.0"
+license: "MIT"
+
+frameworks:
+  - "none"   # or "strands" / "langchain" / "semantic-kernel"
+
+runtime:
+  cli: "agentctl run agent-slug"
+
+tags:
+  - "architecture"
+  - "review"
+
+inputs:
+  - type: "text"
+    name: "request"
+    required: true
+  - type: "file"
+    name: "document"
+    required: false
+    formats: ["pdf", "docx", "md", "txt"]
+
+outputs:
+  - type: "markdown"
+    name: "report"
+
+tools: []
+knowledge: []
+
+limitations:
+  - "Does not access private systems."
+  - "Assumes the input document is complete."
