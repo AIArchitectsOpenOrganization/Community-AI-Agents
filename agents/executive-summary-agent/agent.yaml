@@ -1,0 +1,35 @@
+name: "Executive Summary Agent"
+slug: "executive-summary-agent"
+description: "Creates a one-page executive summary from input text."
+category: "leadership"
+maturity: "draft"
+risk_level: "low"
+
+owner: "community"
+version: "0.1.0"
+license: "MIT"
+
+frameworks:
+  - "none"
+
+runtime:
+  cli: "agentctl run executive-summary-agent"
+
+tags:
+  - "executive"
+  - "summary"
+
+inputs:
+  - type: "text"
+    name: "content"
+    required: true
+
+outputs:
+  - type: "markdown"
+    name: "summary"
+
+tools: []
+knowledge: []
+
+limitations:
+  - "Does not verify data accuracy."

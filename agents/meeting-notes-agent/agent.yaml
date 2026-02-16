@@ -1,0 +1,35 @@
+name: "Meeting Notes Agent"
+slug: "meeting-notes-agent"
+description: "Converts raw meeting notes into structured MoM."
+category: "delivery"
+maturity: "draft"
+risk_level: "low"
+
+owner: "community"
+version: "0.1.0"
+license: "MIT"
+
+frameworks:
+  - "none"
+
+runtime:
+  cli: "agentctl run meeting-notes-agent"
+
+tags:
+  - "meeting"
+  - "delivery"
+
+inputs:
+  - type: "text"
+    name: "notes"
+    required: true
+
+outputs:
+  - type: "markdown"
+    name: "mom"
+
+tools: []
+knowledge: []
+
+limitations:
+  - "Does not validate facts."
